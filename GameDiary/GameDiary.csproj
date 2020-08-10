@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08B908ED-6DDD-40B2-9B7E-777416498455}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameDiary</RootNamespace>
+    <AssemblyName>GameDiary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPC.Designer.cs">
+      <DependentUpon>frmPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCADD.Designer.cs">
+      <DependentUpon>frmPCADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPS4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPS4.Designer.cs">
+      <DependentUpon>frmPS4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPS4ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPS4ADD.Designer.cs">
+      <DependentUpon>frmPS4ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSwitch.Designer.cs">
+      <DependentUpon>frmSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSwitchADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSwitchADD.Designer.cs">
+      <DependentUpon>frmSwitchADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXbox.Designer.cs">
+      <DependentUpon>frmXbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXboxADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXboxADD.Designer.cs">
+      <DependentUpon>frmXboxADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPC.resx">
+      <DependentUpon>frmPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCADD.resx">
+      <DependentUpon>frmPCADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPS4.resx">
+      <DependentUpon>frmPS4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPS4ADD.resx">
+      <DependentUpon>frmPS4ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSwitch.resx">
+      <DependentUpon>frmSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSwitchADD.resx">
+      <DependentUpon>frmSwitchADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXbox.resx">
+      <DependentUpon>frmXbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXboxADD.resx">
+      <DependentUpon>frmXboxADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Xbox_one_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280px-Playstation_logo_colour.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pc-logo-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps4 menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbox menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbox menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{7AC18D09-A0A8-4767-8996-0F0D58947591}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
